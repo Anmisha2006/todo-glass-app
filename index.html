@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass To-Do App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    
+    <!-- Theme Toggle -->
+    <button id="themeBtn" onclick="toggleTheme()">🌙</button>
+
+    <h2>✨ My To-Do List</h2>
+
+    <!-- Input Section -->
+    <div class="input-section">
+    <input type="text" id="taskInput" placeholder="Enter a task...">
+
+    <input type="date" id="dueDate">
+    <input type="time" id="dueTime">
+
+    <button onclick="addTask()">Add</button>
+</div>
+    <!-- Task List -->
+    <ul id="taskList"></ul>
+
+    <!-- Progress -->
+    <div class="progress">
+        <p id="progressText">0 / 0 Completed</p>
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+    </div>
+
+    <!-- Dashboard -->
+    <div class="dashboard">
+        <h3>📊 Dashboard</h3>
+        <p>Total Tasks: <span id="totalTasks">0</span></p>
+        <p>Completed: <span id="completedTasks">0</span></p>
+        <p>Pending: <span id="pendingTasks">0</span></p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
